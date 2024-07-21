@@ -1,0 +1,431 @@
+INFO - 2024-07-21 03:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 03:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 03:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 03:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 03:33:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-21 03:33:45 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'dellortto_ariel', 3306, '', 0)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Home->listado()
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ProT3_26129391_\app\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+#7 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Home->listado()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-21 03:33:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dellortto_ariel'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->listado()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-21 03:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-21 03:33:49 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'dellortto_ariel', 3306, '', 0)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Home->listado()
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ProT3_26129391_\app\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+#7 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Home->listado()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-21 03:33:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dellortto_ariel'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->listado()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-21 04:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 04:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 04:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 04:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 04:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-21 04:12:38 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'dellortto_ariel', 3306, '', 0)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Home->listado()
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ProT3_26129391_\app\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+#7 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Home->listado()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-21 04:12:38 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dellortto_ariel'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->listado()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-21 04:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-21 04:19:00 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'dellortto_ariel', 3306, '', 0)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Home->listado()
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ProT3_26129391_\app\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+#7 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Home->listado()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-21 04:19:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dellortto_ariel'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->listado()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-21 04:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 04:19:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-21 04:19:10 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'dellortto_ariel', 3306, '', 0)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Home->listado()
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ProT3_26129391_\app\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+#7 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Home->listado()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-21 04:19:10 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dellortto_ariel'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->listado()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-21 04:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 04:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 04:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 04:21:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-21 04:22:26 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'dellortto_ariel', 3306, '', 0)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProT3_26129391_\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProT3_26129391_\system\Validation\Validation.php(278): CodeIgniter\Validation\StrictRules\Rules->is_unique('admin@admin.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\ProT3_26129391_\system\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('email', 'email', 'admin@admin.com', Array, Array)
+#7 C:\xampp\htdocs\ProT3_26129391_\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\usuario_controller.php(24): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\usuario_controller->formValidation()
+#10 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuario_controller))
+#11 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProT3_26129391_\system\Validation\Validation.php(278): CodeIgniter\Validation\StrictRules\Rules->is_unique('admin@admin.com', 'email', Array, NULL, 'email')
+#5 C:\xampp\htdocs\ProT3_26129391_\system\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('email', 'email', 'admin@admin.com', Array, Array)
+#6 C:\xampp\htdocs\ProT3_26129391_\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\usuario_controller.php(24): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\usuario_controller->formValidation()
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuario_controller))
+#10 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-21 04:22:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dellortto_ariel'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `usuarios`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(278): CodeIgniter\Validation\StrictRules\Rules->is_unique('admin@admin.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('email', 'email', 'admin@admin.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\usuario_controller.php(24): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\usuario_controller->formValidation()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuario_controller))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-21 04:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 04:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 04:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 04:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-21 04:57:35 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'dellortto_ariel', 3306, '', 0)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Home->listado()
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\ProT3_26129391_\app\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+#7 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Home->listado()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-21 04:57:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dellortto_ariel'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Models\usuario_Model.php(16): CodeIgniter\BaseModel->findAll()
+ 6 APPPATH\Controllers\Home.php(65): App\Models\usuario_Model->getUsuarios()
+ 7 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Home->listado()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-21 05:12:06 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'dellortto_ariel', 3306, '', 0)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProT3_26129391_\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProT3_26129391_\system\Validation\Validation.php(278): CodeIgniter\Validation\StrictRules\Rules->is_unique('admin@admin.com', 'email', Array, NULL, 'email')
+#6 C:\xampp\htdocs\ProT3_26129391_\system\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('email', 'email', 'admin@admin.com', Array, Array)
+#7 C:\xampp\htdocs\ProT3_26129391_\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\usuario_controller.php(24): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\usuario_controller->formValidation()
+#10 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuario_controller))
+#11 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProT3_26129391_\system\Validation\Validation.php(278): CodeIgniter\Validation\StrictRules\Rules->is_unique('admin@admin.com', 'email', Array, NULL, 'email')
+#5 C:\xampp\htdocs\ProT3_26129391_\system\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('email', 'email', 'admin@admin.com', Array, Array)
+#6 C:\xampp\htdocs\ProT3_26129391_\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\usuario_controller.php(24): CodeIgniter\Controller->validate(Array)
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\usuario_controller->formValidation()
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuario_controller))
+#10 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-21 05:12:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dellortto_ariel'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `usuarios`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Validation\StrictRules\Rules.php(206): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\Validation\Validation.php(278): CodeIgniter\Validation\StrictRules\Rules->is_unique('admin@admin.com', 'email', [...], null, 'email')
+ 5 SYSTEMPATH\Validation\Validation.php(182): CodeIgniter\Validation\Validation->processRules('email', 'email', 'admin@admin.com', [...], [...])
+ 6 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH\Controllers\usuario_controller.php(24): CodeIgniter\Controller->validate([...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\usuario_controller->formValidation()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\usuario_controller))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-21 05:13:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 05:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 05:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-21 05:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-21 05:13:47 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'dellortto_ariel', 3306, '', 0)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Login_controller.php(28): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Login_controller->auth()
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+#9 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dellortto_ariel' in C:\xampp\htdocs\ProT3_26129391_\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ProT3_26129391_\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ProT3_26129391_\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ProT3_26129391_\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ProT3_26129391_\app\Controllers\Login_controller.php(28): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(932): App\Controllers\Login_controller->auth()
+#7 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+#8 C:\xampp\htdocs\ProT3_26129391_\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ProT3_26129391_\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-21 05:13:47 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dellortto_ariel'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `usuarios`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login_controller.php(28): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Login_controller->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login_controller))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
