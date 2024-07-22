@@ -33,7 +33,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'dellortto_ariel',
+        'database' => 'dell_ortto_ariel',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
