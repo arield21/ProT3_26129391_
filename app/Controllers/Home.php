@@ -23,6 +23,7 @@ class Home extends BaseController
         echo view('front/quienes_somos');
         echo view('front/footer_view');
     }
+    
     public function acerca_de()
     {
         $data['titulo']='acerca de';
@@ -31,6 +32,7 @@ class Home extends BaseController
         echo view('front/acerca_de');
         echo view('front/footer_view');
     }
+   
     public function registro()
     {
         $data['titulo']='registro';
@@ -47,7 +49,7 @@ class Home extends BaseController
         echo view('Back/usuario/login');
         echo view('front/footer_view');
     }
-     
+
     public function usuarioing()
     {
         $model = new usuario_Model();
@@ -84,7 +86,6 @@ class Home extends BaseController
     public function store(){
 
     $validacion =$this->validate([
-
             'nombre' => 'required',
             'apellido' => 'required',
             'email' => 'required',
@@ -92,6 +93,7 @@ class Home extends BaseController
             'pass' => 'required',]);
 
         if($_POST && $validacion){
+
           //print_r($_POST);exit;
 
         $datos = [            
@@ -107,6 +109,8 @@ class Home extends BaseController
 
         session()->setFlashdata('mensaje', 'Registro guardado exitosamente' );      
 
+        return redirect()->to(base_url('Home'));
+
         }else{
 
             $error = $this->validator->listErrors();
@@ -120,18 +124,16 @@ class Home extends BaseController
     public function edit($id){ 
 
         $model = new usuario_Model();
-
         $dato = $model->getUsuario($id);
 
         $data['titulo']='edit';
         echo view('front/head_view',$data);
-        echo view('front/navbar_view');
-        echo view('Back/usuario/edit', compact('dato'));
+        echo view('/front/navbar_view');
+        echo view('/Back/usuario/edit', compact('dato'));
         echo view('front/footer_view');
     }
 
     public function update(){
-
             $validacion =$this->validate([
             'nombre' => 'required',
             'apellido' => 'required',
@@ -139,7 +141,7 @@ class Home extends BaseController
             'usuario' => 'required',
             'pass' => 'required',]);
 
-        if($validacion){
+        if($_POST && $validacion){
 
           //print_r($_POST);exit;
 
@@ -150,9 +152,7 @@ class Home extends BaseController
             'email' => $_POST['email'],
             'usuario' => $_POST['usuario'],
             'pass' => $_POST['pass'],            
-        ];
-
-        $id=$_POST['id'];
+        ];        
 
         $model = new usuario_Model();
         $model->updateDatos($id, $datos);
@@ -163,7 +163,7 @@ class Home extends BaseController
 
         }else{
             
-            $id= $_POST['id'];
+            //$id= $_POST['id'];
 
             $error = $this->validator->listErrors();
 
@@ -177,7 +177,24 @@ class Home extends BaseController
         $model = new usuario_Model();
         $model->delete($id);
         session()->setFlashdata('mensaje', 'Registro Eliminado');
-        return redirect()->to(base_url('Home'));
+        return redirect()->to(base_url('Home/'));
+    }
+
+    public function carrito()
+    {
+        $data['titulo']='carrito';
+        echo view('front/head_view',$data);
+        echo view('front/navbar_view');
+        echo view('front/carrito');
+        echo view('front/footer_view');
+    }
+     public function carrito_cliente()
+    {
+        $data['titulo']='carrito_cliente';
+        echo view('front/head_view',$data);
+        echo view('front/navbar_view');
+        echo view('front/carrito_cliente');
+        echo view('front/footer_view');
     }
     
 }
