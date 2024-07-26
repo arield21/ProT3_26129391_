@@ -24,27 +24,43 @@
                         <a  href="<?php echo base_url('principal')?> " class="nav-link" ><img src="<?php echo base_url('assets/img/home2.jpg')?>" alt="principal" width="100" height="40" class=""></a>
                       </li>
                       <li class="nav-item ">
-                        <a class="nav-link  btn btn-dark text-light" aria-current="page" href="quienes_somos">Quienes Somos</a>
+                        <a class="nav-link  btn btn-dark text-light" aria-current="page" href="<?php echo base_url('quienes_somos');?>">Quienes Somos</a>
                       </li>
                       <li class="nav-item ">
-                        <a class="nav-link btn btn-dark text-light" href="acerca_de">Acerca de</a>
+                        <a class="nav-link btn btn-dark text-light" href="<?php echo base_url('acerca_de');?>">Acerca de</a>
                       </li>
                       <li class="nav-item ">
-                        <a class="nav-link btn btn-dark text-light" href="registro">Registrarse</a>
+                        <a class="nav-link btn btn-dark text-light" href="<?php echo base_url('registro');?>">Registrarse</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link btn btn-dark text-light" href="login">ingresar</a>
+                        <a class="nav-link btn btn-dark text-light" href="<?php echo base_url('login');?>">ingresar</a>
                       </li>
-                      <li class="nav-item">
-                        <a class="nav-link btn btn-dark " href="usuario_cuatro">Productos</a>
-                      </li> 
+                         <!--
+                          me costo mucho enter la logica del ruteo, tuve errores para poder poder hacer el ruteo y me saco demasiado  tiempo para completar el trbajo puse como presentacion las vistas 
+                         me hubiese gustado completar mejor pero no podia avanzar porque ingresando los codigos algo tenia algun conflicto
+                          -->
+
+                      <li class="nav-item dropdown pe-sm-1">              
+                              <a class="nav-link dropdown-toggle btn btn-dark text-light" href="#" data-bs-toggle="dropdown" aria-expanded="false">Menu Productos</a>                              
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="<?php echo base_url('/listado');?>">Productos</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('/add');?>">Ingresar Productos</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('/add');?>">Editar Productos</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('/listado');?>" >Editar/Eliminar Productos</a></li>
+                                    <li><a class="nav-link text-dark" href="<?php echo base_url('/logout');?>" tabindex="-1" aria-disabled="true">Cerrar Sesión</a></li>       
+                                  </ul>
+                      </li>
                       <li class="nav-item dropdown pe-sm-1">              
                               <a class="nav-link dropdown-toggle btn btn-dark text-light" href="#" data-bs-toggle="dropdown" aria-expanded="false">Menu Admin</a>
+
+                                <!-- puse como presentacion me hubiese gustado completar mejor pero ingresando los codigos 
+                                  no podia avanzar porque algo tenia algun conflicto -->
+
                                   <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="listado">listado Usuarios</a></li>
-                                    <li><a class="dropdown-item" href="add">Ingresar usuarios</a></li>
-                                    <li><a class="dropdown-item" href="">Modificar Usuario</a></li>
-                                    <li><a class="dropdown-item" href="">Eliminar Usuario</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('/listado');?>">Usuarios</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('/add');?>">Ingresar Usuario</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('/add');?>">Editar Usuario</a></li>
+                                    <li><a class="dropdown-item" href="<?php echo base_url('/listado');?>">Eliminar Usuarios</a></li>    
                                     <li><a class="nav-link text-dark" href="<?php echo base_url('/logout');?>" tabindex="-1" aria-disabled="true">Cerrar Sesión</a></li>       
                                   </ul>
                       </li>
@@ -74,27 +90,27 @@
                       <li class="nav-item btn btn-outline-secondary pt-sm-2 pe-sm-3 ">
                         <a  href="<?php echo base_url('principal')?> " class="nav-link" ><img src="<?php echo base_url('assets/img/home2.jpg')?>" alt="principal" width="100" height="40" class=""></a>
                       </li>
-                      <li class="nav-item ">
-                          <a class="nav-link  btn btn-dark text-light" aria-current="page" href="quienes_somos">Quienes Somos</a>
+                     <li class="nav-item ">
+                        <a class="nav-link  btn btn-dark text-light" aria-current="page" href="<?php echo base_url('quienes_somos');?>">Quienes Somos</a>
                       </li>
                       <li class="nav-item ">
-                           <a class="nav-link btn btn-dark text-light" href="acerca_de">Acerca de</a>
+                        <a class="nav-link btn btn-dark text-light" href="<?php echo base_url('acerca_de');?>">Acerca de</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link btn btn-dark text-light" href="<?php echo base_url('registro');?>">Registrarse</a>
                       </li>
                       <li class="nav-item">
-                           <a class="nav-link btn btn-dark text-light" href="registro">Registrarse</a>
+                        <a class="nav-link btn btn-dark text-light" href="<?php echo base_url('login');?>">ingresar</a>
                       </li>
                       <li class="nav-item">
-                           <a class="nav-link btn btn-dark text-light" href="login">ingresar</a>
-                      </li>
-                      <li class="nav-item">
-                            <a class="nav-link btn btn-dark text-light" aria-disabled="true">Desabilitado</a>
+                            <a class="nav-link btn btn-dark text-light" href="<?php echo base_url('carrito_cliente');?>">promociones</a>
                       </li>           
                       <li class="nav-item dropdown pe-sm-1">              
                         <a class="nav-link dropdown-toggle btn btn-dark text-light" href="#" data-bs-toggle="dropdown" aria-expanded="false">Menu de Usuario</a>
                           <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Servicio Usuario 1 </a></li>
-                              <li><a class="dropdown-item" href="#">Servicio Usuario 2 </a></li>
-                              <li><a class="dropdown-item" href="#">Servicio Usuario 3 </a></li>
+                              <li><a class="dropdown-item" href="<?php echo base_url('carrito_cliente');?>">Servicio Usuario 1 </a></li>
+                              <li><a class="dropdown-item" href="<?php echo base_url('carrito_cliente');?>">Servicio Usuario 2 </a></li>
+                              <li><a class="dropdown-item" href="<?php echo base_url('carrito_cliente');?>">Servicio Usuario 3 </a></li>
                               <li><a class="nav-link text-dark" href="<?php echo base_url('/logout');?>" tabindex="-1" aria-disabled="true">Cerrar Sesión</a></li>
                           </ul>
                       </li>
@@ -123,26 +139,26 @@
                     <a  href="<?php echo base_url('principal')?> " class="nav-link" ><img src="<?php echo base_url('assets/img/home2.jpg')?>" alt="principal" width="100" height="40" class=""></a>
                   </li>
                   <li class="nav-item ">
-                    <a class="nav-link  btn btn-dark text-light" aria-current="page" href="quienes_somos">Quienes Somos</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link btn btn-dark text-light" href="acerca_de">Acerca de</a>
-                  </li>
+                        <a class="nav-link  btn btn-dark text-light" aria-current="page" href="<?php echo base_url('quienes_somos');?>">Quienes Somos</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link btn btn-dark text-light" href="<?php echo base_url('acerca_de');?>">Acerca de</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link btn btn-dark text-light" href="<?php echo base_url('registro');?>">Registrarse</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn btn-dark text-light" href="<?php echo base_url('login');?>">ingresar</a>
+                      </li>
                   <li class="nav-item">
-                    <a class="nav-link btn btn-dark text-light" href="registro">Registrarse</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link btn btn-dark text-light" href="login">ingresar</a>
-                  </li>
-                  <li class="nav-item">
-                        <a class="nav-link  btn btn-dark text-light" href="listado">Productos</a>
+                        <a class="nav-link  btn btn-dark text-light" href="<?php echo base_url('carrito');?>">Productos</a>
                       </li>     
                   <li class="nav-item dropdown pe-sm-1">              
                     <a class="nav-link dropdown-toggle btn btn-dark text-light" href="" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Servicio 1</a></li>
-                      <li><a class="dropdown-item" href="#">Servicio 2</a></li>
-                      <li><a class="dropdown-item" href="#">Servicio 3</a></li>
+                      <li><a class="dropdown-item" href="<?php echo base_url('carrito');?>">Productos</a></li>
+                      <li><a class="dropdown-item" href="<?php echo base_url('carrito');?>">Productos 2</a></li>
+                      <li><a class="dropdown-item" href="<?php echo base_url('carrito');?>">Productos 3</a></li> 
                       
                     </ul>
                    </li> 

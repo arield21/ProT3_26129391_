@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-           <html lang="es" class="bg-secondary" >
+           <html lang="es" class="bg-dark" >
               <head >
                 <meta charset="utf-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
                 <!--<title>Principal</title> -->
-                <title><?php echo($titulo);?></title>
+                <title><?php echo($titulo); ?></title>
 
                 <link href="<?php echo base_url('assets/css/bootstrap.min.css');?>"  rel="stylesheet">
                 <link href="<?php echo base_url('assets/css/miestilo.css');?>" rel="stylesheet">
@@ -33,5 +33,5 @@
                         </div>
                     </div>
                </header>
-  <body class="container-lg-fluid bg-secondary" >
-      <div class="bg-secondary">
+  <body class="container-lg-fluid bg-dark" >
+      <div class="bg-dark">
