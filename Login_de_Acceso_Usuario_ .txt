@@ -1,0 +1,9 @@
+admin@admin.com / pass = admin
+admin@gmail.com / pass = admin
+
+
+usuario@usuario.com / pass = usuario
+usuario@gmail.com  / pass = usuario
+
+cliente@cliente.com / pass = cliente
+cliente@gmail.com/ pass = cliente
