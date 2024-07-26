@@ -19,7 +19,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
-$routes->setAutoRoute(true);
+//$routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
@@ -27,28 +27,32 @@ $routes->setAutoRoute(true);
  * --------------------------------------------------------------------
  */
 
-// We get a performance increase by specifying the default
-// route since we don't have to scan directories.
+//We get a performance increase by specifying the default
+//route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('principal', 'Home::index');
 $routes->get('quienes_somos', 'Home::quienes_somos');
 $routes->get('acerca_de', 'Home::acerca_de');
 $routes->get('registro', 'Home::registro');
 $routes->get('login', 'Home::login');
-$routes->get('add', 'Home::add');
-$routes->get('usuarioing', 'Home::usuarioing');
-$routes->get('listado', 'Home::listado');
-$routes->get('edit', 'Home::edit');
-$routes->get('/store','Home::add');
 
-
+$routes->get('/add','Home::add');
+$routes->get('/delete','Home::delete');
+$routes->get('/usuarioing', 'Home::usuarioing');
+$routes->get('/listado', 'Home::listado');
+$routes->get('/edit', 'Home:edit');
+$routes->get('/Home/store','Home::store');
+$routes->get('/update','Home::update');
+$routes->get('carrito', 'Home::carrito');
+$routes->get('carrito_cliente', 'Home::carrito_cliente');
+$routes->get('/edit/(:num)', 'Home::edit/$1');
 
 
 
 /*rutas dek Registro de Usuarios*/
 $routes->get('/registro','usuario_controller::create');
 $routes->post('/enviar-form','usuario_controller::formValidation');
-$routes->post('/update','Home::update');
+$routes->get('Home/update','Home::update');
 
 
 
@@ -63,7 +67,7 @@ $routes->post('/enviarlogin', 'login_controller::auth');
 $routes->get('/panel', 'Panel_controller::index',['filter' => 'auth']);
 $routes->get('/logout', 'login_controller::logout');
 $routes->get('add', 'Home::add');
-#$routes->post('/Home/store','Home::add');
+$routes->post('/Home/store','Home::add');
 
 /*
 
