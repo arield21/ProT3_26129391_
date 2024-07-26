@@ -13,7 +13,7 @@
 
                 <?php }?> 
 
-            <form action="<?= base_url('Home/update') ?>" method="post">
+            <form action="<?= base_url('/update') ?>" method="post">
 
                  <div class="card-body">
                       <div class="mb-3">
@@ -38,9 +38,10 @@
                       </div>                      
                        <input type="submit" value="Editar" class="btn btn-success"> 
                        <input type="hidden" name="id" value="<?= $dato['id_usuario']?>" >
-                       <a href="<?= base_url('Home/add'); ?>" class="btn btn-danger">Cancelar</a>                     
+                       <a href="<?= base_url('Home'); ?>" class="btn btn-danger">Cancelar</a>                     
                 </div>
             </form>
+            <!--tengo me falta completar el boton editar y el boton eliminar -->
     </div>
   </div>
   

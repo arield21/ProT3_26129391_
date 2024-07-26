@@ -1,7 +1,8 @@
 <div class="container">
-    <div class="card">
-          USUARIO ING Featured Listado de Usuarios
+    <div class="card"><br>
+          <h5>Listado de Usuarios Registrados</h5> <br>
         </div>
+       
           <?php if(session('mensaje')){?>
 
                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -18,6 +19,7 @@
                           <th scope="col">nombre</th>
                           <th scope="col">Apellido</th>
                           <th scope="col">usuario</th>
+                          <th scope="col">email</th>
                           <th scope="col">Accion</th>                          
                       </tr>
                     </thead>
@@ -28,8 +30,9 @@
                           <td><?php echo $dato['nombre']; ?></td>
                           <td><?php echo $dato['apellido']; ?></td>
                           <td><?php echo $dato['usuario']; ?></td>
-                          <td><a href="<?= base_url('/edit/'.$dato['id_usuario'])?>">Editar</a>
-                            <a href="<?= base_url('/delete/'.$dato['id_usuario'])?>">Delete</a></td>   
+                          <td><?php echo $dato['email']; ?></td>
+                          <td><a class="btn btn-warning" href="<?= base_url('/edit/'.$dato['id_usuario'])?>">Editar</a>
+                            <a class="btn btn-danger" href="<?= base_url('/delete/'.$dato['id_usuario'])?>">Delete</a></td>   
                       </tr>
                       <?php endforeach; ?>  
                     </tbody>
